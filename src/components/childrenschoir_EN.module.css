@@ -1,0 +1,185 @@
+cd src:root {
+  --bs-orange: #d9564a;
+}
+
+/* Mobile Layout */
+
+.footer {
+  background-color: rgb(37, 37, 37);
+  color: rgb(240, 238, 238);
+  padding: 20px;
+}
+
+.footerText {
+  font-size: 12px;
+  line-height: 16px;
+}
+a {
+  color: rgb(28, 165, 251);
+}
+
+p {
+  font-size: clamp(16px, 5vw, 18px);
+}
+
+.section {
+  padding: 15px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 0px;
+  font-family: "Rubik Mono One", monospace;
+}
+
+.block {
+  margin-top: clamp(5em, 5vw, 10rem);
+}
+.padB {
+  padding-bottom: 20px;
+}
+.padT {
+  padding-top: 20px;
+}
+
+.HeadLine {
+  font-size: clamp(35px, 4vw, 52px);
+
+  line-height: clamp(35px, 5vw, 62px);
+  font-family: "Rubik Mono One", monospace;
+  margin: 0px;
+}
+
+.subHeadLine {
+  font-size: clamp(16px, 4vw, 18px);
+}
+img {
+  width: 100%;
+  border-radius: 5px;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+.joinTittle {
+  font-family: "Rubik Mono One", monospace;
+  /* color: var(--bs-orange); */
+}
+
+.joinForm {
+  width: 100%;
+}
+
+.signUpForm {
+  box-shadow: 0px 0px 10px grey;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.displayTuggleIpad {
+  display: none;
+}
+
+.displayTuggleMobile {
+  display: block;
+}
+
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+@media (max-width: 1023px) and (min-width: 481px) {
+  .section {
+    padding: 20px;
+  }
+
+  .hero {
+    padding: 0px;
+  }
+  .containerGrid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    column-gap: 2em; /* Space between grid items */
+    row-gap: 1rem; /* Space between grid items */
+
+    padding: 0px; /* Padding around the grid */
+  }
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: start;
+  }
+
+  .benefitsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Two columns */
+    grid-gap: 10px; /* Space between grid items */
+  }
+
+  .displayTuggleIpad {
+    display: block;
+  }
+
+  .displayTuggleMobile {
+    display: none;
+  }
+
+  .bioClaudia {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-gap: 1rem; /* Space between grid items */
+  }
+  .formTwo {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 0px;
+  }
+  .containerGrid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    column-gap: 2rem; /* Space between grid items */
+    row-gap: 1rem; /* Space between grid items */
+
+    padding: 0px; /* Padding around the grid */
+  }
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: start;
+  }
+
+  .benefitsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Two columns */
+    grid-gap: 10px; /* Space between grid items */
+  }
+
+  .displayTuggleIpad {
+    display: block;
+  }
+
+  .displayTuggleMobile {
+    display: none;
+  }
+
+  .bioClaudia {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-gap: 1rem; /* Space between grid items */
+  }
+  .formTwo {
+    width: 50%;
+  }
+}

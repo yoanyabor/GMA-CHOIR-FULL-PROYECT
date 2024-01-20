@@ -1,0 +1,4 @@
+.logo {
+  padding-top: clamp(0px, 5vw, 10px);
+  width: clamp(50px, 5vw, 55px);
+}

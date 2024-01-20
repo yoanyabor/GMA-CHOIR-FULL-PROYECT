@@ -1,0 +1,176 @@
+cd src:root {
+  --bs-blue: #0c4baa;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', */
+  /* 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', */
+  /* sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Poppins", sans-serif;
+}
+
+.h1 {
+  font-size: 3.5rem;
+}
+
+.gradient {
+  background-color: #dcdcdc;
+  background-image: linear-gradient(160deg, #dcdcdc 0%, #ffffff 100%);
+}
+.margenes {
+  margin-top: 3rem;
+  /* margin-bottom: 3rem; */
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.hero__text {
+  /* width: "10rem"; */
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  font-stretch: extra-expanded;
+  font-optical-sizing: none;
+  text-align: center;
+  opacity: 1;
+  color: rgb(84, 84, 84);
+  /* font-family: "Poppins", Tofu; */
+  /* line-height: initial; */
+}
+.h2Centered {
+  /* text-align: center; */
+  /* padding: 1rem; */
+  font-size: 2.5rem;
+}
+
+.header {
+  height: 94vh;
+  width: 100vw;
+  /* background: var(--bs-dark); */
+  overflow: hidden;
+}
+
+.img {
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: var(--bs-white);
+}
+
+.centered {
+  position: absolute;
+  text-align: center;
+  color: var(--bs-gray-dark);
+  width: 100vw;
+
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centeredOpen {
+  position: absolute;
+  text-align: center;
+  color: var(--bs-gray-dark);
+  width: 50vw;
+
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+.bg-p {
+  background-color: rgb(34, 79, 119);
+  line-height: 3rem;
+}
+.fz-md {
+  font-size: 1.1rem;
+}
+
+.footer {
+  min-height: 25rem;
+  background-color: black;
+}
+
+.link__footer {
+  color: var(--bs-gray);
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* font-size = 0.7rem,
+    position= absolute,
+    bottom=0.5rem,
+    left: "50%", */
+
+  /* // textAlign: "center", */
+}
+
+.trans {
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
+  /* margin-left: 50% !important; */
+}
+
+.blur {
+  -webkit-filter: blur(30px);
+  -moz-filter: blur(30px);
+  -o-filter: blur(30px);
+  -ms-filter: blur(30px);
+  filter: url(#blur);
+  filter: blur(30px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+  /* -webkit-transition: 1s -webkit-filter linear;
+  -o-transition: 1s -o-filter linear; */
+}
